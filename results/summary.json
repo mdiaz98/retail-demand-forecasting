@@ -1,0 +1,35 @@
+{
+  "n_series": 2632,
+  "n_weeks": 143,
+  "test_origins": [
+    "2012-05-18",
+    "2012-07-13",
+    "2012-09-07"
+  ],
+  "metrics": {
+    "Seasonal naive": {
+      "WAPE": 0.10503,
+      "MAE": 1857.92371,
+      "WMAE": 1874.84245,
+      "Bias": -0.01935
+    },
+    "XGBoost": {
+      "WAPE": 0.08238,
+      "MAE": 1457.22058,
+      "WMAE": 1457.32275,
+      "Bias": -0.00766
+    },
+    "GRU (PyTorch)": {
+      "WAPE": 0.09123,
+      "MAE": 1613.86523,
+      "WMAE": 1599.49721,
+      "Bias": -0.0008
+    }
+  },
+  "gru_beats_xgb_share_of_windows": 0.402,
+  "train_seconds": {
+    "XGBoost": 78.1,
+    "GRU (PyTorch)": 571.1
+  },
+  "gru_epochs": 11
+}

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+# Kaggle competition data: download it yourself, do not commit it
+data/raw/
